@@ -7,7 +7,7 @@ ForEach-Object {
 #configure TLS settings for GitHub
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-#cache issue labels
+#cache issue label
 $global:PSIssueLabel = Get-PSIssueLabel
 
 #define an autocompleter for Get-PSIssue
